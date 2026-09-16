@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>luke johnston — filmmaker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f7f4ec;
+    --ink: #18150f;
+    --muted: #746e5f;
+    --rule: #ddd6c5;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'EB Garamond', Georgia, serif;
+  }
+
+  body {
+    font-size: 19px;
+    line-height: 1.6;
+  }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ---- hero ---- */
+
+  header.hero {
+    padding: 120px 0 90px;
+    text-align: center;
+  }
+
+  header.hero .name {
+    font-size: clamp(40px, 8vw, 64px);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    margin: 0;
+    text-transform: lowercase;
+  }
+
+  header.hero .role {
+    font-style: normal;
+    color: var(--muted);
+    font-size: 20px;
+    margin: 10px 0 34px;
+  }
+
+  header.hero .bio {
+    max-width: 540px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.75;
+    color: var(--ink);
+  }
+
+  /* ---- section labels ---- */
+
+  h2.section-label {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: lowercase;
+    margin: 0 0 56px;
+  }
+
+  h2.section-label::after {
+    content: ".";
+  }
+
+  section.work {
+    padding: 20px 0 100px;
+  }
+
+  hr.rule {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 90px 0;
+  }
+
+  /* ---- reel (hero video, larger) ---- */
+
+  .reel {
+    margin-bottom: 96px;
+  }
+
+  .video-frame {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    background: #0f0d09;
+    overflow: hidden;
+  }
+
+  .video-frame iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .reel .caption {
+    text-align: center;
+    margin-top: 22px;
+  }
+
+  .reel .caption .title {
+    font-size: 24px;
+    text-transform: lowercase;
+  }
+
+  .reel .caption .sub {
+    font-style: normal;
+    color: var(--muted);
+    font-size: 16px;
+    margin-top: 4px;
+  }
+
+  /* ---- project list ---- */
+
+  .project {
+    margin-bottom: 76px;
+  }
+
+  .project:last-child {
+    margin-bottom: 0;
+  }
+
+  .project .caption {
+    text-align: center;
+    margin-top: 18px;
+  }
+
+  .project .caption .title {
+    font-size: 21px;
+    text-transform: lowercase;
+  }
+
+  .project .caption .sub {
+    font-style: normal;
+    color: var(--muted);
+    font-size: 15px;
+    margin-top: 3px;
+  }
+
+  /* ---- footer ---- */
+
+  footer {
+    text-align: center;
+    padding: 70px 0 110px;
+    color: var(--muted);
+    font-style: italic;
+    font-size: 16px;
+  }
+
+  footer a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  footer a:hover {
+    border-bottom-color: var(--ink);
+  }
+
+  @media (max-width: 600px) {
+    header.hero { padding: 80px 0 60px; }
+    hr.rule { margin: 60px 0; }
+    .reel { margin-bottom: 64px; }
+    .project { margin-bottom: 56px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="hero">
+    <p class="name">luke johnston</p>
+    <p class="role">filmmaker</p>
+    <p class="bio">visual storyteller working across 16mm film and digital, focused on atmospheric non-narrative visual content alongside narrative filmmaking.</p>
+  </header>
+
+  <section class="work">
+
+    <h2 class="section-label">selected work</h2>
+
+    <div class="reel">
+      <div class="video-frame">
+        <iframe src="https://player.vimeo.com/video/1227530850" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="caption">
+        <p class="title">content reel</p>
+        <p class="sub">(6k blackmagic raw &amp; super 16mm)</p>
+      </div>
+    </div>
+
+    <hr class="rule">
+
+    <div class="project">
+      <div class="video-frame">
+        <iframe src="https://player.vimeo.com/video/1227528891" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="caption">
+        <p class="title">chinatown</p>
+        <p class="sub">(shot on super 16mm)</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="video-frame">
+        <iframe src="https://player.vimeo.com/video/1227528899" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="caption">
+        <p class="title">the summit</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="video-frame">
+        <iframe src="https://player.vimeo.com/video/1227528894" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="caption">
+        <p class="title">lani aliza — prom shoot</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="video-frame">
+        <iframe src="https://player.vimeo.com/video/1227528898" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="caption">
+        <p class="title">snow sounds</p>
+        <p class="sub">(shot on super 16mm)</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="video-frame">
+        <iframe src="https://player.vimeo.com/video/1227528895" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="caption">
+        <p class="title">the shop</p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>get in touch — <a href="mailto:lukejohnston790@gmail.com">lukejohnston790@gmail.com</a></p>
+    <p>302-542-7562</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
